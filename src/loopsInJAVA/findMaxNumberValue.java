@@ -6,18 +6,21 @@ public class findMaxNumberValue {
         Scanner input = new Scanner(System.in);
 
         int max, number;
-        number  = input.nextInt();
-        max = 0;
 
-        while (number!=0){
+        max = 1;
+        int count =  1;
+
+        while (count<=3){
+            number = input.nextInt();
             if (number > max){
                 max = number;
             }
-            number = input.nextInt();
+
+            count++;
         }
 
-        System.out.println("max is "+max);
-        System.out.println("number is "+number);
+        System.out.println(max+" eh o maior");
+
 
 
     }
